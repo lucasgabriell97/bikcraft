@@ -1,0 +1,100 @@
+<template>
+  <header class="header-bg">
+    <div class="header">
+      <a href="./">
+        <img src="../assets/img/bikcraft.svg" alt="Bikcraft">
+      </a>
+      <nav aria-label="primaria">
+        <ul class="header-menu">
+          <li><a href="./bicicletas.html">Bicicletas</a></li>
+          <li><a href="./seguros.html">Seguros</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</template>
+
+<script>
+export default {
+  name: 'TheHeader'
+}
+</script>
+
+<style scoped>
+.header-bg {
+  background-color: #000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.header-menu a {
+  display: inline-block;
+  padding: 16px 0;
+  color: #fff;
+  font-size: 1.125rem;
+  position: relative;
+}
+
+.header-menu a:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 0px;
+  background-color: #fff;
+  margin-top: 4px;
+  transition: width 0.3s ease-out;
+}
+
+.header-menu a:hover:after {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .header-menu {
+    gap: 20px;
+  }
+
+  .header-menu a {
+    background-color: #111;
+    padding: 12px 16px;
+    border-radius: 4px;
+  }
+
+  .header-menu a:hover {
+    background-color: #2e2e2e;
+  }
+
+  .header a:after {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-menu {
+    gap: 12px;
+  }
+
+  .header-menu a {
+    padding: 8px 12px;
+    font-size: 0.875rem;
+  }
+}
+</style>
