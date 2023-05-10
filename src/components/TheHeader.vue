@@ -1,14 +1,14 @@
 <template>
   <header class="header-bg">
     <div class="header">
-      <a href="./">
+      <router-link to="/">
         <img src="../assets/img/bikcraft.svg" alt="Bikcraft">
-      </a>
-      <nav aria-label="primaria">
+      </router-link>
+      <nav aria-label="primary">
         <ul class="header-menu">
-          <li><a href="./bicicletas.html">Bicicletas</a></li>
-          <li><a href="./seguros.html">Seguros</a></li>
-          <li><a href="./contato.html">Contato</a></li>
+          <li><router-link to="/bicicletas.html">Bicicletas</router-link></li>
+          <li><router-link to="/seguros.html">Seguros</router-link></li>
+          <li><router-link to="/contato.html">Contato</router-link></li>
         </ul>
       </nav>
     </div>
