@@ -6,7 +6,9 @@
         <p>Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
         <router-link to="/bicicletas.html">Escolha a sua</router-link>
       </div>
-      <img src="../assets/img/fotos/introducao.jpg" alt="Bicicleta elétrica preta.">
+      <div>
+        <img src="../assets/img/fotos/introducao.jpg" alt="Bicicleta elétrica preta.">
+      </div>
     </div>
   </main>
 </template>
