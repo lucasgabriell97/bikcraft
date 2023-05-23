@@ -17,6 +17,7 @@ export default {
 </script>
 
 <style>
+/*==== RESET ====*/
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +26,8 @@ export default {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  height: 2000px;
+  padding-bottom: 600px;
+  color: #111;
 }
 
 ul {
@@ -42,54 +44,8 @@ img {
   display: block;
 } 
 
-.introduction-bg {
-  background-color: #000;
-  color: #fff;
-  box-shadow: inset 0 -120px #fff;
-}
-
-.introduction {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0 40px;
-  max-width: 1200px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-
-.introduction-content {
-  align-self: end;
-  padding-bottom: 200px;
-}
-
-.introduction img {
-  height: 100%;
-  object-fit: cover;
-  border-radius: 4px;
-}
-
-.introduction h1 {
-  margin-bottom: 32px;
-  font-size: 4rem;
-  line-height: 1.125;
-  font-family: "Poppins";
-  font-weight: 600;
-}
-
-.introduction h1 span {
-  color: #ffbb00;
-}
-
-.introduction p {
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  color: #b2b2b2;
-  font-family: "Roboto";
-  font-weight: 400;
-}
-
-.introduction a {
+/*==== MAIN BUTTON ====*/
+.button {
   display: inline-block;
   padding: 16px 32px;
   background: linear-gradient(#ffbf00, #f2a50c);
@@ -97,58 +53,109 @@ img {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0,1);
   text-transform: uppercase;
   color: #332200;
-  font-size: 1.125rem;
-  line-height: 1.33;
-  font-family: "Poppins";
-  font-weight: 600;
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
 }
 
-.introduction a:hover {
+.button:hover {
   background: linear-gradient(#ffb60d, #e59317);
 }
 
 @media (max-width: 600px) {
-  .introduction a {
+  .button {
     padding: 12px 16px;
     font-size: 1rem;
   }
 }
 
+/*==== UTILITIES ====*/
+.font-1-xs {
+  font: 400 0.75rem/1.35 "Poppins", sans-serif;
+}
+
+.font-2-xs {
+  font: 400 0.875rem/1.43 "Roboto", sans-serif;
+}
+
+.font-1-s {
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+}
+
+.font-2-s {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+}
+
+.font-1-m,
+.font-1-m-b {
+  font: 400 1.125rem/1.35 "Poppins", sans-serif;
+}
+
+.font-1-m-b {
+  font-weight: 600;
+}
+
+.font-2-m {
+  font: 500 1.125rem/1.35 "Roboto", sans-serif;
+}
+
+.font-1-l {
+  font: 400 1.5rem/1.5 "Poppins", sans-serif;
+}
+
+.font-2-l,
+.font-2-l-b {
+  font: 400 1.5rem/1.5 "Roboto", sans-serif;
+}
+
+.font-2-l-b {
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+}
+
+.font-1-xl {
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+}
+
+.font-2-xl {
+  font: 500 2rem/1.25 "Roboto", sans-serif;
+  
+}
+
+.font-1-xxl {
+  font: 600 4rem/1.125 "Poppins", sans-serif;
+}
+
 @media (max-width: 1200px) {
-  .introduction h1 {
+  .font-1-xxl {
     font-size: 3rem;
   }
   
-  .introduction p {
-    font-size: 1.1rem;
+  .font-2-l,
+  .font-2-l-b {
+    font-size: 1.125rem;
   }
 }
 
 @media (max-width: 800px) {
-  .introduction-bg {
-    background-color: #111;
-    padding-top: 40px;
-    box-shadow: inset 0 -60px #fff;
-  }
-
-  .introduction {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-
-  .introduction-content {
-    padding-bottom: 0;
-  }
-
-  .introduction h1 {
+  .font-1-xxl {
     font-size: 2rem;
-    margin-bottom: 16px;
   }
 
-  .introduction img {
-    height: 300px;
-    width: 100%;
+  .font-1-xl,
+  .font-2-xl {
+    font-size: 1.5rem;
   }
 }
 
+:root {
+  --primary-color: #ffbb00;
+  --black-color: #000;
+  --white-color: #fff;
+  --gray-color-text: #b2b2b2;
+  --gray-color-bg: #111;
+}
+
+.primary-color {
+  color: #ffbb00;
+}
 </style>
