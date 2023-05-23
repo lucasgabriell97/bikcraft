@@ -5,7 +5,7 @@
         <img src="../assets/img/bikcraft.svg" alt="Bikcraft">
       </router-link>
       <nav aria-label="primary">
-        <ul class="header-menu">
+        <ul class="header-menu font-1-m">
           <li><router-link to="/bicicletas.html">Bicicletas</router-link></li>
           <li><router-link to="/seguros.html">Seguros</router-link></li>
           <li><router-link to="/contato.html">Contato</router-link></li>
@@ -23,7 +23,7 @@ export default {
 
 <style scoped>
 .header-bg {
-  background-color: #000;
+  background-color: var(--black-color);
 }
 
 .header {
@@ -47,11 +47,8 @@ export default {
 .header-menu a {
   display: inline-block;
   padding: 16px 0;
-  color: #fff;
-  font-size: 1.125rem;
+  color: var(--white-color);
   position: relative;
-  font-family: "Poppins";
-  font-weight: 400;
 }
 
 .header-menu a:after {
@@ -60,7 +57,7 @@ export default {
   display: block;
   height: 2px;
   width: 0px;
-  background-color: #fff;
+  background-color: var(--white-color);
   margin-top: 4px;
   transition: width 0.3s ease-out;
 }
@@ -75,7 +72,7 @@ export default {
   }
 
   .header-menu a {
-    background-color: #111;
+    background-color: var(--gray-color-bg);
     padding: 12px 16px;
     border-radius: 4px;
   }
